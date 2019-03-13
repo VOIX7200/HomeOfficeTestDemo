@@ -5,8 +5,8 @@
     <classes>
       <class name="com.googletest.qa.test.GoogleSearchTest">
         <methods>
+          <include name="googleSearchTest1"/>
           <include name="tearDown"/>
-          <include name="googleSearchTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.googletest.qa.test.GoogleSearchTest -->

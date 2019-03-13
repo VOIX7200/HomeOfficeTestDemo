@@ -18,13 +18,13 @@ public class GoogleSearchTest extends TestBase {
 	
 	@BeforeMethod
 	public void setUp(){
-		//initialise();
-		initialiseRemote();
+		initialise();
+		//initialiseRemote();
 		gsp = new GoogleSearchPage();
 		gsrp = new GoogleSearchResultPage();		
 	}
 	
-	/**@Test
+	@Test
 	public void googleSearchTest1(){
 		// Adaptavist Search Test
 		gsp.goToGooglePage();
@@ -35,16 +35,16 @@ public class GoogleSearchTest extends TestBase {
 		gsrp.navigateAndScreeShot();
 		
 		
-	}**/
+	}
 	
-	@Test
+	/**@Test
 	public void googleSearchTest2(){
 		// Atlassian Search Test
 		gsp.goToGooglePage();
 		gsp.doSearch("Atlassian");
 		gsrp.verifyText("Adaptavist");
 		
-	}
+	}**/
 	
 	
 	@AfterMethod

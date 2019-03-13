@@ -36,7 +36,8 @@ public class GoogleSearchResultPage extends TestBase {
 	
 	public void getScreenShot(int screenNumber){
 		System.out.println("Enter getScreenShot.....");
-		String filePath = System.getProperty("user.dir")+"//ScreenShots//"+screenNumber+":"+System.currentTimeMillis()+".png";
+		String filePath = System.getProperty("user.dir")+"//ScreenShots//"+screenNumber+".png";
+		//":"+System.currentTimeMillis()+
 		File targetFile = new File(filePath);
 		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		
@@ -61,7 +62,7 @@ public class GoogleSearchResultPage extends TestBase {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				//getScreenShot(i);
+				getScreenShot(i);
 				//get screen shoot and navigate back
 				driver.navigate().back();
 			}
