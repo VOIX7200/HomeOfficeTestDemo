@@ -18,8 +18,8 @@ public class GoogleSearchTest extends TestBase {
 	
 	@BeforeMethod
 	public void setUp(){
-		initialise();
-		//initialiseRemote();
+		//initialise();
+		initialiseRemote();
 		gsp = new GoogleSearchPage();
 		gsrp = new GoogleSearchResultPage();		
 	}
