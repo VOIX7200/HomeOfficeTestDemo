@@ -6,7 +6,7 @@ seleniumhub:
 firefoxnode:
   image: selenium/node-firefox-debug
   ports:
-    - 4577
+    - 5900
   environment:
    - NODE_MAX_INSTANCES=2
    - NODE_MAX_SESSION=2
@@ -16,7 +16,7 @@ firefoxnode:
 chromenode:
   image: selenium/node-chrome-debug
   ports:
-    - 4578
+    - 5901
   links:
    - seleniumhub:hub
  

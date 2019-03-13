@@ -29,8 +29,7 @@ public class TestBase {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} 
-		//C:\Users\Emman\Desktop\SELENIUM DIARY\SELENIUM_PROJETS\NEW PAPA PROJECTS\AdaptavistTest\src\main\java\com\gooogletest\qa\config\config.properties
-		
+		 
 	}
 	
 	

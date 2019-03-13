@@ -28,23 +28,24 @@ public class GoogleSearchTest extends TestBase {
 	public void googleSearchTest1(){
 		// Adaptavist Search Test
 		gsp.goToGooglePage();
-		//GoogleSearchResultPage pgf = gsp.doSearch("Adaptavist");
-		//pgf.navigateAndScreeShot();
+		 
 		gsp.doSearch("Adaptavist");	
-		//gsrp.printList();
-		gsrp.navigateAndScreeShot();
+		 
+		gsrp.navigateAndScreenShot();
 		
 		
 	}
 	
-	/**@Test
+	@Test
 	public void googleSearchTest2(){
 		// Atlassian Search Test
 		gsp.goToGooglePage();
+		
 		gsp.doSearch("Atlassian");
+		
 		gsrp.verifyText("Adaptavist");
 		
-	}**/
+	}
 	
 	
 	@AfterMethod

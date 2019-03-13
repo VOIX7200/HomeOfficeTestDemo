@@ -30,14 +30,14 @@ public class GoogleSearchResultPage extends TestBase {
 	
 	public void printList(){
 		for(int i=0; i<getResults().size();i++){
-			System.out.println("printing list " + searchResults.get(i).getText());
+			System.out.println(searchResults.get(i).getText());
 		}
 	}
 	
 	public void getScreenShot(int screenNumber){
 		System.out.println("Enter getScreenShot.....");
 		String filePath = System.getProperty("user.dir")+"//ScreenShots//"+screenNumber+".png";
-		//":"+System.currentTimeMillis()+
+		 
 		File targetFile = new File(filePath);
 		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		
@@ -47,12 +47,12 @@ public class GoogleSearchResultPage extends TestBase {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}	
-	//	FileUtils. copyFile(src, new File("C:/selenium/"+System.currentTimeMillis()+".png")); }
+	 
 	}
 	
 	 
 	
-	public void navigateAndScreeShot(){
+	public void navigateAndScreenShot(){
 		for(int i=0; i<getResults().size();i++){
 			if(getResults().get(i).getText().contains("Adaptavist")){
 				getResults().get(i).click();

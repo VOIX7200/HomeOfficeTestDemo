@@ -19,7 +19,7 @@ public class GoogleSearchPage extends TestBase {
 	@FindBy(name="q")
 	private WebElement searchBox;
 	
-	//@FindBy(css ="button.Tg7LZd")
+	 
 	@FindBy(xpath="//*[@id='tsf']/div[2]/div/div[2]/div[2]/div/center/input[1]")
 	private WebElement searchButton;
 	
@@ -33,23 +33,16 @@ public class GoogleSearchPage extends TestBase {
 	
 	public GoogleSearchResultPage doSearch(String text){
 		searchBox.sendKeys(text);
-		wait.until(ExpectedConditions.elementToBeClickable(searchButton));
-		
-		//driver.findElement(By.linkText(text)).click();
-		//List<WebElement> list = driver.findElements(By.xpath("//ul[@role='listbox']//li/descendant::div[@class='sbl1 sbl1p']/span"));
-		List<WebElement> list = driver.findElements(By.xpath("//div[@class='sbtc']"));
-		
-		System.out.println("total number of suggestions in searc box::====>" + list.size());
-		for(int i= 0; i<list.size(); i++){
-			System.out.println("print list "+list.get(i).getText());
+		wait.until(ExpectedConditions.elementToBeClickable(searchButton));		 
+		List<WebElement> list = driver.findElements(By.xpath("//div[@class='sbtc']"));	 
+		for(int i= 0; i<list.size(); i++){			 
 			if(list.get(i).getText().equalsIgnoreCase(text)){
 				list.get(i).click();
 				break;
 			}
 		}
 		
-		//wait.until(ExpectedConditions.elementToBeClickable(searchButton));
-		//searchButton.click();		
+	 	
 		return new GoogleSearchResultPage();		
 	}
 
