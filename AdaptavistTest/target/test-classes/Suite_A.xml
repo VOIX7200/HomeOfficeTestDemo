@@ -1,0 +1,10 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite A">
+    <test name="GoogleSearchTest">
+        <classes>
+            <class name="com.googletest.qa.test.GoogleSearchTest"></class>
+        </classes>           
+    </test>    
+     
+</suite>
