@@ -5,7 +5,7 @@
   > docker-compose up -d &&
   > mvn test
   
-  Note:Please look in my setUp function, their is are two initialise options, use 1 initialise(no VNC), or intialiseRemote (use VNC). 
+  Note:Please look in my setUp function, their is are two initialise options, use  initialise(no VNC viewer required), or intialiseRemote (VNC viewer required). 
             
 
   
